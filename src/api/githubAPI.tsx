@@ -69,7 +69,7 @@ export async function getIssues(
   repo: string,
   page = 1
 ): Promise<IssuesResult> {
-  const url = `https://api.github.com/repos/${org}/${repo}/issues?per_page=25&page=${page}`
+  const url = `https://api.github.com/repos/${org}/${repo}/issues?per_page=5&page=${page}`
 
   try {
     const issuesResponse = await axios.get<Issue[]>(url)

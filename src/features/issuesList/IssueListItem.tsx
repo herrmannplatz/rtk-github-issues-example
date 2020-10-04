@@ -30,7 +30,7 @@ export const IssueListItem = ({
   const pluralizedComments = comments === 1 ? 'comment' : 'comments'
 
   return (
-    <div className={styles.issue}>
+    <div className={styles.issue} data-testid="list-item">
       <UserWithAvatar user={user} />
       <div className="issue__body">
         <a href="#comments" onClick={onIssueClicked}>
